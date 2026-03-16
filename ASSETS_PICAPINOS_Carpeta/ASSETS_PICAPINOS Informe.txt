@@ -1,0 +1,47 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: ASSETS_PICAPINOS.ai
+Modo de color: Color RGB
+Perfil de color: sRGB IEC61966-2.1
+Unidades de regla: p’xeles
+Dimensiones de la mesa de trabajo: 1924,02 px x 1082,2612 px
+Mostrar im‡genes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edici—n de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes:
+PP Editorial New Ultralight (OTF)
+PP Editorial New Ultralight Italic (OTF)
+PP Editorial New Regular (OTF)
+PP Model Mono Book (OTF)
+PP Model Mono Medium (OTF)
+PP Model Mono Bold (OTF)
+Neue Montreal Light (OTF)
+Neue Montreal Regular (OTF)
+Neue Montreal Medium (OTF)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Im‡genes enlazadas:
+Ninguno
