@@ -3,13 +3,10 @@ import { waLink } from '@/lib/utils';
 
 export default function ContactoCTA() {
   return (
-    <section
-      className="py-24 px-6"
-      style={{ backgroundColor: 'var(--color-accent)' }}
-    >
+    <section className="py-24 px-6" style={{ backgroundColor: 'var(--color-accent)' }}>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="max-w-2xl">
+          <div>
             <p
               className="text-xs tracking-widest uppercase mb-6 opacity-50"
               style={{ fontFamily: 'var(--font-model-mono)', color: '#F5F2ED' }}
@@ -62,15 +59,16 @@ export default function ContactoCTA() {
             </div>
           </div>
 
-          {/* Sello decorativo */}
-          <div className="hidden lg:flex items-center justify-center">
-            <div className="w-64 h-64 relative opacity-60" style={{ mixBlendMode: 'multiply', filter: 'invert(1)' }}>
+          {/* Sello "Hecho a mano / Memoria viva" — invertido a blanco */}
+          <div className="hidden lg:flex items-center justify-center" aria-hidden="true">
+            <div className="w-56 h-56 relative opacity-25">
               <Image
                 src="/images/PNGs/ASSETS_PICAPINOS-06.png"
-                alt="Hecho a mano — Memoria viva"
+                alt=""
                 fill
                 className="object-contain"
-                sizes="256px"
+                sizes="224px"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </div>
           </div>

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const pasos = [
   {
     num: '01',
@@ -26,35 +28,47 @@ export default function ProcesoTrabajo() {
     <section className="py-24 px-6" style={{ backgroundColor: 'var(--color-bg)' }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-16">
-          <p
-            className="text-xs tracking-widest uppercase mb-4 opacity-50"
-            style={{ fontFamily: 'var(--font-model-mono)', color: 'var(--color-text)' }}
-          >
-            Cómo trabajamos
-          </p>
-          <h2
-            className="text-4xl md:text-5xl leading-tight"
-            style={{ fontFamily: 'var(--font-editorial-ultralight)', color: 'var(--color-text)' }}
-          >
-            El proceso,{' '}
-            <em
-              className="not-italic"
-              style={{ fontFamily: 'var(--font-editorial-ultralight-italic)' }}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+          <div>
+            <p
+              className="text-xs tracking-widest uppercase mb-4 opacity-50"
+              style={{ fontFamily: 'var(--font-model-mono)', color: 'var(--color-text)' }}
             >
-              paso a paso.
-            </em>
-          </h2>
+              Cómo trabajamos
+            </p>
+            <h2
+              className="text-4xl md:text-5xl leading-tight"
+              style={{ fontFamily: 'var(--font-editorial-ultralight)', color: 'var(--color-text)' }}
+            >
+              El proceso,{' '}
+              <em
+                className="not-italic"
+                style={{ fontFamily: 'var(--font-editorial-ultralight-italic)' }}
+              >
+                paso a paso.
+              </em>
+            </h2>
+          </div>
+
+          {/* Sello decorativo */}
+          <div className="shrink-0 w-32 h-32 relative opacity-80" aria-hidden="true">
+            <Image
+              src="/images/PNGs/ASSETS_PICAPINOS-04.png"
+              alt=""
+              fill
+              className="object-contain"
+              sizes="128px"
+            />
+          </div>
         </div>
 
         {/* Pasos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px"
+          style={{ backgroundColor: 'var(--color-border)' }}
+        >
           {pasos.map((paso) => (
-            <div
-              key={paso.num}
-              className="p-8"
-              style={{ backgroundColor: 'var(--color-bg)' }}
-            >
+            <div key={paso.num} className="p-8" style={{ backgroundColor: 'var(--color-bg)' }}>
               <p
                 className="text-4xl mb-6 opacity-20"
                 style={{ fontFamily: 'var(--font-model-mono)', color: 'var(--color-accent)' }}

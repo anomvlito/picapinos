@@ -8,12 +8,15 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-end pt-16 overflow-hidden"
       style={{ backgroundColor: 'var(--color-accent)' }}
     >
-      {/* Pájaro halftone decorativo — fondo */}
+      {/* Pájaro halftone — textura de fondo */}
       <div
         className="absolute inset-0 flex items-center justify-end pointer-events-none select-none"
         aria-hidden="true"
       >
-        <div className="relative w-[55vw] max-w-[700px] aspect-square opacity-20" style={{ mixBlendMode: 'multiply' }}>
+        <div
+          className="relative w-[55vw] max-w-[700px] aspect-square opacity-15"
+          style={{ mixBlendMode: 'screen' }}
+        >
           <Image
             src="/images/PNGs/ASSETS_PICAPINOS-15.png"
             alt=""
@@ -28,6 +31,17 @@ export default function HeroSection() {
       {/* Contenido */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pb-24 w-full">
         <div className="max-w-3xl">
+          {/* Marca — pájaro pequeño */}
+          <div className="mb-6" aria-hidden="true">
+            <Image
+              src="/images/PNGs/ASSETS_PICAPINOS-01.png"
+              alt=""
+              width={36}
+              height={36}
+              style={{ filter: 'brightness(0) invert(1)', opacity: 0.7 }}
+            />
+          </div>
+
           {/* Eyebrow */}
           <p
             className="text-xs tracking-widest uppercase mb-8 opacity-60"
@@ -89,7 +103,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Línea decorativa inferior */}
         <div
           className="absolute bottom-0 left-6 right-6 h-px opacity-20"
           style={{ backgroundColor: '#F5F2ED' }}
