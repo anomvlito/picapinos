@@ -42,10 +42,9 @@ export default function SobreNosotros() {
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8" style={{ borderTop: '1px solid var(--color-border)' }}>
+            <div className="grid grid-cols-2 gap-8 mt-12 pt-8" style={{ borderTop: '1px solid var(--color-border)' }}>
               {[
                 { num: '10+', label: 'Años de oficio' },
-                { num: '200+', label: 'Piezas creadas' },
                 { num: '100%', label: 'Hecho a mano' },
               ].map((stat) => (
                 <div key={stat.label}>
