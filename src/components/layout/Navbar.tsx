@@ -20,14 +20,15 @@ export default function Navbar() {
       style={{ backgroundColor: 'var(--color-bg)', borderBottom: '1px solid var(--color-border)' }}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo wordmark */}
         <Link href="/" className="flex items-center" aria-label="Picapinos — Inicio">
           <Image
-            src="/images/PICAPINO_01.svg"
+            src="/images/PNGs/ASSETS_PICAPINOS-18.png"
             alt="Picapinos"
-            width={40}
-            height={40}
+            width={160}
+            height={24}
             priority
+            style={{ height: '22px', width: 'auto' }}
           />
         </Link>
 

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function SobreNosotros() {
   return (
     <section
@@ -64,17 +66,19 @@ export default function SobreNosotros() {
             </div>
           </div>
 
-          {/* Placeholder imagen taller */}
+          {/* Logo completo como pieza visual */}
           <div
-            className="aspect-[4/5] flex items-center justify-center"
-            style={{ backgroundColor: 'var(--color-border)' }}
+            className="flex items-center justify-center p-12"
+            style={{ backgroundColor: 'var(--color-bg)' }}
           >
-            <span
-              className="text-xs tracking-widest uppercase opacity-30"
-              style={{ fontFamily: 'var(--font-model-mono)', color: 'var(--color-muted)' }}
-            >
-              Foto del taller — próximamente
-            </span>
+            <Image
+              src="/images/PNGs/ASSETS_PICAPINOS-17.png"
+              alt="Picapinos — Taller de Innovación & Mobiliario de Autor"
+              width={500}
+              height={400}
+              className="w-full max-w-sm"
+              style={{ height: 'auto' }}
+            />
           </div>
         </div>
       </div>

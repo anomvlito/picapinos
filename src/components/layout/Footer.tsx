@@ -5,20 +5,19 @@ import { waLink } from '@/lib/utils';
 export default function Footer() {
   return (
     <footer
-      className="border-t mt-0"
-      style={{ backgroundColor: 'var(--color-accent)', borderColor: 'var(--color-accent)', color: '#F5F2ED' }}
+      style={{ backgroundColor: 'var(--color-accent)', color: '#F5F2ED' }}
     >
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Marca */}
           <div>
-            <div className="mb-4">
+            <div className="mb-5">
               <Image
-                src="/images/PICAPINO_01.svg"
+                src="/images/PNGs/ASSETS_PICAPINOS-19.png"
                 alt="Picapinos"
-                width={48}
-                height={48}
-                style={{ filter: 'brightness(0) invert(1)' }}
+                width={180}
+                height={28}
+                style={{ height: '26px', width: 'auto' }}
               />
             </div>
             <p className="text-sm leading-relaxed opacity-70" style={{ fontFamily: 'var(--font-neue-montreal)' }}>
@@ -84,7 +83,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Picapinos. Todos los derechos reservados.
           </p>
           <p className="text-xs opacity-40" style={{ fontFamily: 'var(--font-neue-montreal)' }}>
-            Hecho a mano, con madera.
+            Espacio · Memoria · Sentido
           </p>
         </div>
       </div>

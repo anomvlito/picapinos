@@ -1,12 +1,30 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { waLink } from '@/lib/utils';
 
 export default function HeroSection() {
   return (
     <section
-      className="relative min-h-screen flex items-end pt-16"
+      className="relative min-h-screen flex items-end pt-16 overflow-hidden"
       style={{ backgroundColor: 'var(--color-accent)' }}
     >
+      {/* Pájaro halftone decorativo — fondo */}
+      <div
+        className="absolute inset-0 flex items-center justify-end pointer-events-none select-none"
+        aria-hidden="true"
+      >
+        <div className="relative w-[55vw] max-w-[700px] aspect-square opacity-20" style={{ mixBlendMode: 'multiply' }}>
+          <Image
+            src="/images/PNGs/ASSETS_PICAPINOS-15.png"
+            alt=""
+            fill
+            className="object-contain object-right"
+            sizes="55vw"
+            priority
+          />
+        </div>
+      </div>
+
       {/* Contenido */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pb-24 w-full">
         <div className="max-w-3xl">
@@ -76,21 +94,6 @@ export default function HeroSection() {
           className="absolute bottom-0 left-6 right-6 h-px opacity-20"
           style={{ backgroundColor: '#F5F2ED' }}
         />
-      </div>
-
-      {/* Número decorativo */}
-      <div
-        className="absolute top-1/2 right-6 md:right-12 -translate-y-1/2 hidden lg:block select-none"
-        style={{
-          fontFamily: 'var(--font-model-mono)',
-          color: '#F5F2ED',
-          opacity: 0.04,
-          fontSize: '320px',
-          lineHeight: 1,
-          fontWeight: 700,
-        }}
-      >
-        P
       </div>
     </section>
   );
